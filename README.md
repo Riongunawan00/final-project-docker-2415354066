@@ -13,7 +13,7 @@
 
 - **Sistem Operasi:** Windows 11
 - **Containerization:** Docker & Docker Hub
-- **Bahasa Pemrograman / Framework:** Node.js (Express.js)
+- **Bahasa Pemrograman / Framework:** Node.js
 - **Database:** MySQL
 - **Tools Lain:** VS Code, Git, Thunder Client
 
@@ -25,9 +25,11 @@
 Menjalankan multi-container application (Backend Node.js & Database MySQL) menggunakan perintah `docker compose up`. Docker Compose otomatis membuat volume untuk persistensi data database dan custom bridge network agar kedua service dapat berkomunikasi.
 
 **Dokumentasi/Screenshot:**
-*(Ganti nama file di bawah dengan nama screenshot terminal/Docker Desktop kamu)*
+
 ![Proses Build Sukses](img/langkah1.png)
+
 ![Proses Build Sukses](img/dockerdesktop.png)
+
 
 
 ---
@@ -36,9 +38,18 @@ Menjalankan multi-container application (Backend Node.js & Database MySQL) mengg
 Pengujian fitur CRUD REST API dengan mengirim HTTP request GET dan POST ke service backend yang mengekspos port 3000 ke host.
 
 **Dokumentasi/Screenshot:**
-*(Ganti nama file di bawah dengan nama screenshot browser/Thunder Client kamu)*
+
 ![Pengujian Endpoint](img/langkah2.png)
+
 ![Pengujian Endpoint](img/users.png)
+
+![Pengujian Endpoint](img/PUT.png)
+
+![Pengujian Endpoint](img/DELETE.png)
+
+![Pengujian Endpoint](img/POST.png)
+
+
 
 
 ---
@@ -47,8 +58,10 @@ Pengujian fitur CRUD REST API dengan mengirim HTTP request GET dan POST ke servi
 Melakukan proses _tagging_ pada Docker image aplikasi lokal agar sesuai dengan format repository Docker Hub, lalu mem-push image tersebut ke registry publik.
 
 **Dokumentasi/Screenshot:**
-*(Ganti nama file di bawah dengan nama screenshot web Docker Hub kamu)*
+
 ![Proses Push Berhasil](img/langkah3.png)
+
+
 
 ---
 
